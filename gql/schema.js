@@ -11,7 +11,8 @@ const typeDefs = gql`
         contrasena: String!
         descripcion: Stirng
         personajes: [Personaje]
-        redes_sociales: [Redes]
+        redes_sociales: [ContactoInput]
+        imagen: String
         createdAt: String!
         updatedAt: String!
     }
@@ -37,23 +38,37 @@ const typeDefs = gql`
     }
 
     type ElementoLista{
+        id: ID!
         nombre: String!
         apodo: String
         imagen: String!
         descripcion: String!
         orden: Int!
+        createdAt: String!
+        updatedAt: String!
     }
 
     type seguidores{
         id: ID!
         usuario: Usuario!
         siguiendo: Usuario!
-
+        createdAt: String!
+        updatedAt: String!
     }
 
-    type Redes{
+    type Contacto{
+        id: ID!
         nombre: String!
         url: String!
+        icono: String!
+        createdAt: String!
+        updatedAt: String!
+    }
+
+    input ContactoInput{
+        nombre: String!
+        url: String!
+        icono: String!
     }
 
 `;
