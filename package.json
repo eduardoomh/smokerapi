@@ -1,0 +1,14 @@
+{
+  "name": "smokerapi",
+  "version": "1.0.0",
+  "description": "api de graphql para almacenar listas de one piece",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.4",
+    "nodemon": "^2.0.6"
+  }
+}
